@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Todo Frontend
 
-## Getting Started
+This project provides a React frontend for managing todos, built to integrate with the [FastAPI Todo Backend](https://github.com/caglarrkeskinn/TodoApp-FastApi).
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- View all todos.
+- Add a new todo.
+- Update a todo's status.
+- Delete a todo.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Setup and Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the Repository**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```sh
+   git clone https://github.com/caglarrkeskinn/ReactTodoApp
+   cd ReactTodoApp
+   ```
 
-## Learn More
+2. **Install Dependencies**
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Start the Development Server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```sh
+   npm start
+   ```
 
-## Deploy on Vercel
+4. Make sure your FastAPI backend (from [this repository](https://github.com/caglarrkeskinn/TodoApp-FastApi)) is running, as this frontend depends on it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you need to point to a different backend endpoint, adjust the API base URL in your React environment config or wherever you've defined it.
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
